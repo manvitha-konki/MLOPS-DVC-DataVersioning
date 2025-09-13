@@ -12,6 +12,10 @@
         "git commit -m "stop tracking data"
         "dvc add data/"
         "git add .gitignore .data.dvc"  ----- for tracking the data from git (or say like giving the uniqueu id for every commit in git to data in dvc) 
-7. 
+7. Adding data to S3 by dvc 
+        "dvc commit"    
+        "dvc push"
+
+Version 1 in S3 - [{"md5": "9a410ef3cefded36046944694d8db8ee", "relpath": "sample.csv"}]
 
     
