@@ -1,1 +1,17 @@
 1. Create code.py and add code to it. (It will save a csv file to a new "data" folder)
+2. git add,commit, push
+3. dvc init
+4. Now do mkdir "S3" folder (bucket) - where dvc saves all the data
+5. tells dvc the location using the following command:
+        "dvc remote add -d <variable> <folderName>"
+        "dvc remote add -d myRemote S3"
+6. saying which data to save through dvc:
+        "dvc add data/"
+    As data folder is tracking by git it throws an error saying reomve tracking from git to add it into dvc
+        "git -rm -r --cached 'data'"
+        "git commit -m "stop tracking data"
+        "dvc add data/"
+        "git add .gitignore .data.dvc"  ----- for tracking the data from git (or say like giving the uniqueu id for every commit in git to data in dvc) 
+7. 
+
+    
