@@ -1,0 +1,1 @@
+1. Create code.py and add code to it. (It will save a csv file to a new "data" folder)
